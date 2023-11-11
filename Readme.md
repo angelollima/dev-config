@@ -1,11 +1,5 @@
 # Neovim Setup
 
-### Relevant Files
-
-### Setup Requires
-
-## Plugins
-
 #### Plugin Manager
 
 - [folke/lazy.nvim](https://github.com/folke/lazy.nvim) - Amazing plugin manager
