@@ -19,9 +19,9 @@ return {
     }
 
     -- Set menu
-    dashboard.section.buttons.val = {
-      dashboard.button("e", "******************************************************", "<cmd>ene<CR>")
-    }
+    -- dashboard.section.buttons.val = {
+    --  dashboard.button("e", "******************************************************", "<cmd>ene<CR>")
+    --vim.g.skip_ts_context_commentstring_module = truevim.g.skip_ts_context_commentstring_module = true}
 
     -- Send config to alpha
     alpha.setup(dashboard.opts)

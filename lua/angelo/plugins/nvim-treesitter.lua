@@ -5,6 +5,7 @@ return {
     build = ":TSUpdate",
     dependencies = {
       "nvim-treesitter/nvim-treesitter-textobjects",
+      "JoosepAlviste/nvim-ts-context-commentstring",
       "windwp/nvim-ts-autotag",
     },
     config = function()
@@ -56,6 +57,19 @@ return {
         context_commentstring = {
           enable = true,
           enable_autocmd = false,
+          config = {
+            -- Set up the commentstring value based on the filetype
+            commentstring = {
+              lua = "-- %s",
+              vim = '"% s',
+              eruby = "<%# %s %>",
+              html = "<!-- %s -->",
+              css = "/* %s */",
+              javascript = "// %s",
+              typescript = "// %s",
+              tsx = "{/* %s */}",
+            },
+          },
         },
       })
     end,
